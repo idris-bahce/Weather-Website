@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="container-card">
+
+        <% cities.forEach(city=> { %>
+            <div class="card city-box mx-3" style="width: 18rem;">
+                <div class="card-body">
+                    <form action="/select-city" method="POST">
+                        <input type="hidden" name="name" value="<%= city.name %>">
+                        <input type="hidden" name="lat" value="<%= city.lat %>">
+                        <input type="hidden" name="lon" value="<%= city.lon %>">
+                        <h3 class="card-title text-center">
+                            <%= city.name %>
+                        </h3>
+                        <h4 class="card-text text-center">
+                            <%= city.country %>
+                        </h4>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">
+                                Chose
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <% }); %>
+
+    </div>
+    <%- include("partials/footer.ejs") %>

@@ -1,0 +1,39 @@
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(40, 146, 233);
+}
+header h1 {
+  color: antiquewhite;
+}
+header {
+  background-color: rgb(40, 146, 233);
+}
+footer div p {
+  color: white;
+  font-size: 15px;
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.city-box {
+  background-color: #d4d7de;
+}
