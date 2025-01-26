@@ -50,7 +50,7 @@ app.post("/select-city", async (req, res) => {
       URL + `/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIKEY}`
     );
 
-    //Set the time to celcius
+    //Set the temp to celcius
     let temp = weatherResult.data.main.temp;
     let celcius = Math.round(temp - 273);
 
